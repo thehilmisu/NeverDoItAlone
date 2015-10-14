@@ -6,15 +6,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".LoginActivity" >
-
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:text="Start Animation" />
+    tools:context=".LoginActivity"
+    android:background="@drawable/login_background2">
 
     <ImageView
         android:id="@+id/imageView1"
@@ -30,23 +23,28 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:orientation="vertical" >
+        android:orientation="vertical"
+        android:layout_alignBottom="@+id/imageView1">
 
         <EditText
-            android:id="@+id/editText1"
+            android:id="@+id/txtEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Email ID" />
+            android:hint="Email"
+            android:textColor="@color/wallet_highlighted_text_holo_light"
+            android:textColorHint="@color/wallet_highlighted_text_holo_light"/>
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/txtPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:textColor="@color/wallet_highlighted_text_holo_light"
+            android:textColorHint="@color/wallet_highlighted_text_holo_light"/>
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btnLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Login" />
